@@ -14,6 +14,7 @@ header {
     border: 2px solid black;
     background-color: white;
     color: blue;
+    border-radius: 10px;
 }
 
 .navbar {
@@ -21,6 +22,7 @@ header {
     padding: .5%;
     font-size: 20px;
     text-decoration: none;
+    border-radius: 10px;
 }
 
 .name {
@@ -51,6 +53,7 @@ body {
     padding: 15px;
     text-align: center;
     white-space: nowrap;
+    border-radius: 10px;
 }
 
 .website-menu a:hover {

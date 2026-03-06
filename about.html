@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Project</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="site.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <section class="name">
+            <p class="name2">ITEC Capstone 2026</p>
+            <div>
+                <a href="https://www.ku.edu">
+                    <img id="jayhawk" src="https://brand.ku.edu/sites/brand/files/styles/wide_col_xl_6/public/images/2020/KUMarks_Jayhawk.png?h=caf14453&itok=xMjEBOzE" alt="Jayhawk Logo">
+                </a>
+            </div>
+            <h2 class="name2">University of Kansas</h2>
+        </section>
+    
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+    
+        <nav class="website-menu" id="navMenu">
+            <a class="navbar" href="about.html"> The Project</a>
+            <a class="navbar" href="index.html"> The Team</a>
+        </nav>
+    </header>
+
+    <aside id="asideProject"> 
+        <h3 id="project"> The Logfather SIEM </h3>
+        <p id="snippet"> <u>The Plan:</u> Develop a small‑footprint, containerized SIEM platform that provides clear visibility into workstation hardware integrity, enabling early detection of unauthorized changes and supporting secure, maintainable IT environments.</p>
+        <p id="snippet"> Many academic labs and small IT teams lack the resources for enterprise SIEM tools but still face risks from hardware tampering, configuration drift, and limited monitoring capabilities. Existing solutions are often too complex, too costly, or too infrastructure‑heavy. A lightweight, reproducible system is needed to track workstation hardware states, establish baselines, and identify deviations that may indicate security issues or operational problems.
+        </p>
+    </aside>  
+    
+    <h2 class="part"> Planned System Components </h2>
+    <ul class="paragraph">
+        <li>Workstation Agent: PowerShell‑based collector for CPU, RAM, disk, BIOS, GPU, OS, and network configuration data.</li>
+        <li>API Layer: Flask service for receiving, validating, and storing hardware reports.</li>
+        <li>Dashboard: Web interface showing baseline vs. current hardware states for each workstation.</li>
+        <li>Data Storage: SQLite database for structured, portable log retention.</li>
+        <li>Containerization: Docker Compose for consistent deployment and reproducibility.</li>
+    </ul>
+    
+    <h2 class="part"> Planned Methods </h2>
+    <ul class="paragraph"> 
+        <li>Use CIM queries to gather hardware data from Windows workstations.</li>
+        <li>Implement REST endpoints for log ingestion and retrieval.</li>
+        <li>Build grouping logic to identify first‑seen (baseline) and latest (current) hardware states.</li>
+        <li>Design a dual‑panel dashboard layout for clear comparison.</li>
+    </ul>
+
+    <h2 class="part"> Expected Outcomes </h2>
+    <p style="text-align:justify; margin-left:100px; margin-right:100px"> 
+        The proposed system is expected to produce a functional prototype demonstrating that 
+        meaningful workstation integrity monitoring can be achieved without enterprise‑scale SIEM tools. 
+        The project will deliver a reproducible, modular platform capable of collecting hardware data, establishing baselines, 
+        and highlighting deviations that may indicate tampering or system drift. 
+        The architecture is intentionally designed for future enhancements, 
+        including Windows event log ingestion, remote command execution, and automated alerting, 
+        making it a scalable foundation for broader security monitoring needs.
+    </p>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("navMenu");
+            menu.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

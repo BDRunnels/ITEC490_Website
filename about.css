@@ -1,0 +1,29 @@
+#asideProject {
+    float: left;
+    width: 100%;
+}
+
+#project {
+    font-size: 36px;
+    border-bottom: 4px solid black;
+    border-right: 4px solid black;
+    box-shadow: 3px 3px 10px rgba(0,0,0,1);
+    border-radius: 10px;
+    padding: 2%;
+    margin: 2%;
+}
+
+#snippet {
+    text-align: justify;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.part {
+    text-align: center;
+    border-bottom: 2px solid black
+}
+
+.paragraph {
+    margin-left: 20px;
+}

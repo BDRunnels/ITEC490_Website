@@ -1,0 +1,30 @@
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    padding: 20px;
+}
+
+.about-box {
+    background-color: white;
+    border: 2px solid black;  
+    border-radius: 10px;       
+    padding: 15px;
+    text-align: center;
+    box-shadow: 3px 3px 10px rgba(0,0,0,1);
+}
+
+.about-box img {
+    max-width: 25%;   
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.about-box h3 {
+    margin: 10px 0 5px 0;
+}
+
+.about-box p {
+    margin: 0;
+}
+

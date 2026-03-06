@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Logfather SIEM </title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="site.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <section class="name">
+            <p class="name2">ITEC Capstone 2026</p>
+            <div>
+                <a href="https://www.ku.edu">
+                    <img id="jayhawk" src="https://brand.ku.edu/sites/brand/files/styles/wide_col_xl_6/public/images/2020/KUMarks_Jayhawk.png?h=caf14453&itok=xMjEBOzE" alt="Jayhawk Logo">
+                </a>
+            </div>
+            <h2 class="name2">University of Kansas</h2>
+        </section>
+    
+        <!-- Hamburger button -->
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+    
+        <nav class="website-menu" id="navMenu">
+            <a class="navbar" href="about.html"> The Project</a>
+            <a class="navbar" href="index.html"> The Team</a>
+        </nav>
+    </header>
+    
+    <section class="about-grid">
+        <div class="about-box">
+          <img src="./assets/Picture1_capstone.jpg" alt="Box 1 Image">
+          <h3>Bryan Runnels </h3>
+          <p>Some description here.</p>
+        </div>
+        <div class="about-box">
+          <img src="./assets/Picture2_capstone.jpg" alt="Box 2 Image">
+          <h3>Eric Siriboury</h3>
+          <p>Some description here.</p>
+        </div>
+        <div class="about-box">
+          <img src="./assets/Picture3_capstone.jpg" alt="Box 3 Image">
+          <h3>John Smith</h3>
+          <p>Some description here.</p>
+        </div>
+        <div class="about-box">
+          <img src="./assets/Picture4_capstone.jpg" alt="Box 4 Image">
+          <h3>Sheryl Abraham</h3>
+          <p>Some description here.</p>
+        </div>
+      </section>
+      
+    <script>
+        function toggleMenu() {
+            console.log("clicked")
+            const menu = document.getElementById("navMenu");
+            menu.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
